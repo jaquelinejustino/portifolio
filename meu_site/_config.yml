@@ -1,3 +1,5 @@
-title: Meu Site
-description: Este é um exemplo de site hospedado no GitHub Pages.
-theme: minima
+title: Jaqueline Justino
+description: Analista de dados e BI
+theme: jekyll-theme-minimal
+logo: https://avatars.githubusercontent.com/u/117241043?v=4
+show_downloads: false
