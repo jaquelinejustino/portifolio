@@ -1,5 +1,4 @@
-<head>
-    <style>
+<style>
         /* Estilização da imagem */
         .dashboard-link img {
             width: 150px; /* Define o tamanho fixo */
@@ -13,4 +12,3 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
         }
     </style>
-</head>
