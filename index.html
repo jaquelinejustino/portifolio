@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfólio | Jaqueline Justino</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Meu Portfólio</a>
+            <a class="navbar-brand" href="#">Portfólio | Jaqueline Justino</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,42 +26,69 @@
     </nav>
 
     <header class="text-center text-light bg-primary py-5">
-        <h1>Bem-vindo ao Meu Portfólio</h1>
-        <p>Desenvolvedora de soluções inteligentes</p>
+        <h1 class="display-4">Prazer, Jaqueline!</h1>
+        <p class="lead">Desenvolvedora de soluções inteligentes</p>
     </header>
 
     <section id="sobre" class="container py-5">
-        <h2>Sobre Mim</h2>
-        <p>Sou uma profissional apaixonada por tecnologia e dados...</p>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="minha-foto.jpg" class="img-fluid rounded-circle" alt="Minha Foto">
+            </div>
+            <div class="col-md-6">
+                <h2>Sobre Mim</h2>
+                <p>Aqui você pode conhecer melhor o meu trabalho como analista de dados e BI.</p>
+            </div>
+        </div>
     </section>
 
     <section id="projetos" class="container py-5">
-        <h2>Projetos</h2>
+        <h2 class="text-center mb-4">Projetos</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="card">
+                <div class="card shadow">
                     <img src="projeto1.jpg" class="card-img-top" alt="Projeto 1">
                     <div class="card-body">
-                        <h5 class="card-title">Projeto 1</h5>
+                        <h5 class="card-title">Dashboard Global de Vendas</h5>
+                        <p class="card-text">
+                        <p>
+                        A proposta deste projeto foi desenvolvida no curso de <strong>Análise de Dados com Power BI</strong> da Data Science Academy. 
+                        O objetivo foi criar um dashboard interativo para análise de vendas de uma empresa fictícia, utilizando <strong>Power BI</strong>. 
+                        Inicialmente, o projeto foi implementado com uma abordagem mais simples e, posteriormente, aprimorado como um desafio pessoal. 
+                        As melhorias buscaram fornecer insights estratégicos por meio de métricas que identificam padrões sazonais de vendas, 
+                        auxiliando na tomada de decisões do time comercial.
+                        </p>
+
+                        <!-- Link com a imagem pequena -->
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNWM5NzAzNTgtZDYxZC00NjYzLWIzMDItMDk4OTM0YTc4YzQzIiwidCI6IjM1OWUzZDM3LTVlYjgtNDI3NC1iMzY2LWVjYjdjOWE5OWE1YyJ9" target="_blank">
+                            <img src="projeto01-vendas.jpg" alt="Visualizar Dashboard" width="150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="projeto2.jpg" class="card-img-top" alt="Projeto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 2</h5>
                         <p class="card-text">Descrição do projeto.</p>
                         <a href="#" class="btn btn-primary">Ver mais</a>
                     </div>
                 </div>
             </div>
-            <!-- Adicione mais projetos aqui -->
         </div>
     </section>
 
     <section id="contato" class="container py-5 text-center">
         <h2>Contato</h2>
-        <p>Email: seuemail@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/seuusuario" target="_blank">Meu LinkedIn</a></p>
+        <p><i class="bi bi-envelope-fill"></i> Email: justinojaqueline@gmail.com</p>
+        <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/jaqueline-justino/" target="_blank">LinkedIn</a></p>
     </section>
 
     <footer class="text-center text-light bg-dark py-3">
-        <p>&copy; 2024 Meu Nome - Todos os direitos reservados.</p>
+        <p>&copy; 2025 Jaqueline Justino - Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
