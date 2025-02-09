@@ -1,14 +1,9 @@
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        /* Estilização da imagem */
-        .dashboard-link img {
-            width: 150px; /* Define o tamanho fixo */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
-            border-radius: 8px; /* Cantos arredondados */
-        }
-
-        /* Efeito ao passar o mouse */
-        .dashboard-link img:hover {
-            transform: scale(1.1); /* Aumenta 10% o tamanho */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
-        }
+.hover-effect:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
