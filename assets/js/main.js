@@ -62,12 +62,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.querySelector(".contact__form").addEventListener("submit", function (event) {
-    event.preventDefault(); // Evita o recarregamento da página
+    event.preventDefault(); // Impede o comportamento padrão de envio do formulário
 
+    // Envia o formulário para o EmailJS
     emailjs.sendForm("service_7k17if2", "template_1yi0oym", this)
-        .then(() => {
+        .then(function(response) {
+            console.log("Email enviado com sucesso:", response);
             alert("Email enviado com sucesso!");
-        }, (error) => {
-            alert("Erro ao enviar: " + JSON.stringify(error));
+        }, function(error) {
+            console.error("Erro ao enviar email:", error);
+            alert("Erro ao enviar o email. Tente novamente!");
         });
 });
+
