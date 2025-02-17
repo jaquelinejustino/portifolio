@@ -55,3 +55,19 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+/*===== CONTACT =====*/
+document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("SEU_USER_ID_AQUI"); // Substitua pelo seu ID do EmailJS
+});
+
+document.querySelector(".contact__form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Evita o recarregamento da página
+
+    emailjs.sendForm("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", this)
+        .then(() => {
+            alert("Email enviado com sucesso!");
+        }, (error) => {
+            alert("Erro ao enviar: " + JSON.stringify(error));
+        });
+});
