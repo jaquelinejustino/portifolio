@@ -181,15 +181,19 @@ img {
 /*===== HOME =====*/
 .home {
   position: relative;
-  row-gap: 5rem;
+  row-gap: 2rem;
   padding: 4rem 0 5rem;
 }
 .home__data {
   align-self: center;
 }
+.home__data h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem; /* Pequeno espaço entre as linhas */
+}
 .home__title {
   font-size: clamp(2rem, 5vw, 2.5rem); 
-  margin-bottom: var(--mb-5);
+  margin-bottom: 0.5rem;
   line-height: 1.2; /* Para evitar que as linhas fiquem muito espaçadas */
 }
 .home__title-color {
