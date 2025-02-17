@@ -188,8 +188,9 @@ img {
   align-self: center;
 }
 .home__title {
-  font-size: var(--big-font-size);
+  font-size: clamp(2rem, 5vw, var(--big-font-size)); /* Adapta para telas menores */
   margin-bottom: var(--mb-5);
+  line-height: 1.2; /* Reduz espaço entre linhas */
 }
 .home__title-color {
   color: var(--first-color);
