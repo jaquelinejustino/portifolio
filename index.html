@@ -164,12 +164,12 @@
                 <h2 class="section-title">Contato</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="contact.php" method="POST">
-                        <input type="text" name="name" placeholder="Nome" class="contact__input" required>
-                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                        <textarea name="message" placeholder="Digite sua mensagem" class="contact__input" required></textarea>
-                        <input type="submit" value="Enviar" class="contact__button button">
-                    </form>                  
+                <form onsubmit="sendEmail(event)">
+                    <input type="text" name="name" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>                 
                 </div>
             </section>
         </main>
@@ -190,6 +190,7 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
