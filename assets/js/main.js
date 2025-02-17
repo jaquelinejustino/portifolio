@@ -58,13 +58,13 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
 /*===== CONTACT =====*/
 document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init("SEU_USER_ID_AQUI"); // Substitua pelo seu ID do EmailJS
+    emailjs.init("fNTfHemyq1yIryswr"); // Substitua pelo seu ID do EmailJS
 });
 
 document.querySelector(".contact__form").addEventListener("submit", function (event) {
     event.preventDefault(); // Evita o recarregamento da página
 
-    emailjs.sendForm("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", this)
+    emailjs.sendForm("service_7k17if2", "template_1yi0oym", this)
         .then(() => {
             alert("Email enviado com sucesso!");
         }, (error) => {
